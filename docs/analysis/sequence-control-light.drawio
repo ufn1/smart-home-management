@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-11-18T00:00:00.000Z" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram id="sequence-control-light" name="Page-1">
+    <mxGraphModel dx="1100" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1050" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="actor" value="Пайдаланушы" style="rounded=1;html=1;whiteSpace=wrap;fillColor=#DCEAF6;strokeColor=#6C8EBF;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="125" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="line_actor" value="" style="shape=line;strokeColor=#8AA1B1;dashed=1;dashPattern=5 5;" vertex="1" parent="1">
+          <mxGeometry x="101.5" y="108" width="2" height="870" as="geometry" />
+        </mxCell>
+        <mxCell id="app" value="Мобильді қосымша" style="rounded=1;html=1;whiteSpace=wrap;fillColor=#DCEAF6;strokeColor=#6C8EBF;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="280" y="40" width="170" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="line_app" value="" style="shape=line;strokeColor=#8AA1B1;dashed=1;dashPattern=5 5;" vertex="1" parent="1">
+          <mxGeometry x="364.0" y="108" width="2" height="870" as="geometry" />
+        </mxCell>
+        <mxCell id="api" value="Smart Home API" style="rounded=1;html=1;whiteSpace=wrap;fillColor=#DCEAF6;strokeColor=#6C8EBF;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="555" y="40" width="170" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="line_api" value="" style="shape=line;strokeColor=#8AA1B1;dashed=1;dashPattern=5 5;" vertex="1" parent="1">
+          <mxGeometry x="639.0" y="108" width="2" height="870" as="geometry" />
+        </mxCell>
+        <mxCell id="db" value="Деректер базасы" style="rounded=1;html=1;whiteSpace=wrap;fillColor=#DCEAF6;strokeColor=#6C8EBF;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="830" y="40" width="170" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="line_db" value="" style="shape=line;strokeColor=#8AA1B1;dashed=1;dashPattern=5 5;" vertex="1" parent="1">
+          <mxGeometry x="914.0" y="108" width="2" height="870" as="geometry" />
+        </mxCell>
+        <mxCell id="device" value="Ақылды жарық" style="rounded=1;html=1;whiteSpace=wrap;fillColor=#DCEAF6;strokeColor=#6C8EBF;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1105" y="40" width="170" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="line_device" value="" style="shape=line;strokeColor=#8AA1B1;dashed=1;dashPattern=5 5;" vertex="1" parent="1">
+          <mxGeometry x="1189.0" y="108" width="2" height="870" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_0_actor" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="102" y="150" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_0_app" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="365" y="150" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_0" value="1. Құрылғыны таңдау" style="endArrow=block;endFill=1;edgeStyle=none;html=1;strokeColor=#416A86;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="anchor_0_actor" target="anchor_0_app">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_1_app" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="365" y="218" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_1_api" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="218" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_1" value="2. GET /devices/{id}" style="endArrow=block;endFill=1;edgeStyle=none;html=1;strokeColor=#416A86;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="anchor_1_app" target="anchor_1_api">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_2_api" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="286" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_2_db" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="915" y="286" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_2" value="3. Күй мен рұқсатты сұрау" style="endArrow=block;endFill=1;edgeStyle=none;html=1;strokeColor=#416A86;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="anchor_2_api" target="anchor_2_db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_3_db" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="915" y="346" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_3_api" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="346" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_3" value="4. Күй және рұқсат" style="endArrow=open;endFill=0;dashed=1;edgeStyle=none;html=1;strokeColor=#416A86;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="anchor_3_db" target="anchor_3_api">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_4_api" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="406" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_4_app" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="365" y="406" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_4" value="5. Құрылғы мәліметтері" style="endArrow=open;endFill=0;dashed=1;edgeStyle=none;html=1;strokeColor=#416A86;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="anchor_4_api" target="anchor_4_app">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_5_actor" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="102" y="470" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_5_app" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="365" y="470" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_5" value="6. Қосу/өшіруді басу" style="endArrow=block;endFill=1;edgeStyle=none;html=1;strokeColor=#416A86;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="anchor_5_actor" target="anchor_5_app">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_6_app" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="365" y="532" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_6_api" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="532" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_6" value="7. POST /devices/{id}/command" style="endArrow=block;endFill=1;edgeStyle=none;html=1;strokeColor=#416A86;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="anchor_6_app" target="anchor_6_api">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_7_api" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="595" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_7_db" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="915" y="595" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_7" value="8. Рұқсатты тексеру" style="endArrow=block;endFill=1;edgeStyle=none;html=1;strokeColor=#416A86;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="anchor_7_api" target="anchor_7_db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_8_db" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="915" y="646" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_8_api" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="646" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_8" value="9. Рұқсат нәтижесі" style="endArrow=open;endFill=0;dashed=1;edgeStyle=none;html=1;strokeColor=#416A86;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="anchor_8_db" target="anchor_8_api">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_9_api" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="710" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_9_device" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="710" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_9" value="10. Команданы орындау [рұқсат бар]" style="endArrow=block;endFill=1;edgeStyle=none;html=1;strokeColor=#416A86;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="anchor_9_api" target="anchor_9_device">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_10_device" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="770" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_10_api" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="770" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_10" value="11. Орындалу нәтижесі" style="endArrow=open;endFill=0;dashed=1;edgeStyle=none;html=1;strokeColor=#416A86;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="anchor_10_device" target="anchor_10_api">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_11_api" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="829" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_11_db" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="915" y="829" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_11" value="12. Жаңа күйді сақтау [сәтті]" style="endArrow=block;endFill=1;edgeStyle=none;html=1;strokeColor=#416A86;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="anchor_11_api" target="anchor_11_db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_12_db" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="915" y="885" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_12_api" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="885" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_12" value="13. Сақталды" style="endArrow=open;endFill=0;dashed=1;edgeStyle=none;html=1;strokeColor=#416A86;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="anchor_12_db" target="anchor_12_api">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_13_api" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="935" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="anchor_13_app" value="" style="opacity=0;fillOpacity=0;strokeOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="365" y="935" width="1" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_13" value="14. Сәтті/қате жауап" style="endArrow=open;endFill=0;dashed=1;edgeStyle=none;html=1;strokeColor=#416A86;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="anchor_13_api" target="anchor_13_app">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="alt" value="alt [рұқсат бар және құрылғы жауап берді] / [рұқсат жоқ немесе қате]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#D6B656;dashed=1;align=left;verticalAlign=top;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="535" y="680" width="840" height="320" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
