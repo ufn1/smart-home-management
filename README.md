@@ -41,3 +41,34 @@ Smart Home Management System — үйдегі ақылды құрылғылар�
 - IoT: Wi-Fi арқылы басқарылатын жарық контроллері
 
 > Бұл репозиторий — дипломдық жобаның негізгі репозиторийі. Алдағы апталарда басқа диаграммалар мен бағдарламалық код қосылады. Қазіргі кезеңде жүйенің мінез-құлқы модельденген, жұмыс істейтін құрылғы интеграциясы әлі іске асырылмаған.
+
+
+## 13-апта. Деректерді модельдеу
+
+### DFD диаграммалары
+
+- [Контекстік DFD](docs/analysis/dfd-context.png)
+- [DFD 0-деңгей](docs/analysis/dfd-level0.png)
+- [DFD 1-деңгей](docs/analysis/dfd-level1.png)
+
+### Деректер қоры
+
+- [ERD диаграммасы](docs/database/erd.png)
+- [SQL скрипті](docs/database/schema.sql)
+- [SQL сұраныстарының нәтижелері](docs/database/query-results.png)
+
+### Диаграммалардың бастапқы файлдары
+
+- [DFD Context Draw.io](docs/analysis/dfd-context.drawio)
+- [DFD Level 0 Draw.io](docs/analysis/dfd-level0.drawio)
+- [DFD Level 1 Draw.io](docs/analysis/dfd-level1.drawio)
+- [ERD Draw.io](docs/database/erd.drawio)
+
+### Қорытынды
+
+Ақылды үй жүйесінің деректер ағыны модельденді.
+6 кестеден тұратын деректер қоры құрылды.
+1:N және M:N байланыстары жүзеге асырылды.
+JOIN және GROUP BY сұраныстары PostgreSQL 16
+жүйесінде тексерілді.
+
